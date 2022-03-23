@@ -1,1 +1,7 @@
-<?php  echo "hello world!!" ?>
+<?php  
+    include('model/db_manager.php');
+    
+
+
+
+?>

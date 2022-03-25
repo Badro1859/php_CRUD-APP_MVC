@@ -6,10 +6,12 @@
 
 # 1 - login page
     1.1 -- form page            //'finished'
-    1.2 -- link to database
+    1.2 -- link to database     //'finished'
+    1.3 -- create a session     //'finished'
+    1.4 -- logout page          //'finished'
 
 # 2 - home page
-    2.1 -- menu 
+    2.1 -- menu (header and footer)
     2.2 -- form of rent
     2.3 -- link to database
 

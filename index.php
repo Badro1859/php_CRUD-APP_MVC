@@ -1,9 +1,14 @@
 <?php  
-    include('model/db_manager.php');
-    
-    echo "<script> location.href='view/login.php';</script>";
-    exit;
+    session_start();
+    if(!isset($_SESSION['name'])) {
+        echo "<script> location.href='./view/login.php';</script>";
+        exit;
+    }
 
-    //redirect('view/login.php');
+
+
+    
+
+    echo "<div><a href='view/logout.php'>Logout</a></div>";
 
 ?>

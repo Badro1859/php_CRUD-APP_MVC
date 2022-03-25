@@ -1,22 +1,17 @@
 <?php 
     $serverName = "localhost";
     $port = "3308";
-    $userName = "badro";
-    $password = "badro1859";
+    $userName = "root";
+    $password = "root";
     $dbName = "crud";
     
     $dsn = "mysql:host={$serverName};port={$port};dbname={$dbName}";
-    
     try {
         $db = new PDO($dsn, $userName, $password);
-        echo "success";
-
     } catch (PDOException $e) {
-        $error_message = 'Database Error: ';
-        $error_message .= $e->getMessage();
-        //include('../view/error.php');
-        echo $error_message;
+        $error_message = $e->getMessage();
+        echo "<h2>ERROR SERVER : Please try later !!</h2>";
+        echo "{$error_message}";
         exit();
     }
-
 ?>
